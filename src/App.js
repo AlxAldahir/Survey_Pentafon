@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {IdEmployee} from "./components/IdEmployee"
+import Survey from "./components/Survey"
+//import TableQuestion from "./components/TableQuestion";
+
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>ENCUESTA DE SATISFACCIÓN CRECE</h1>
+      <IdEmployee />
     </div>
+      <br />
+      <h3 style={{margin: "50px"}}>Referente al programa CRECE indica en nivel de conocimientos y claridad que tienes, sobre los siguientes puntos:</h3>
+      <Survey />
+    {/*Componete de la encuesta con Tabla (El de la duda) <TableQuestion/>*/} 
+    </>
   );
 }
 
