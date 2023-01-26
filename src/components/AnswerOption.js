@@ -3,7 +3,7 @@ import React from "react";
 
 export const Question = ({ id, text, options, handleChange, answers }) => (
     <div>
-      <h3>{text}</h3>
+      <h4>{text}</h4>
       {options.map(option => (
         <Option
           key={option}
@@ -17,8 +17,8 @@ export const Question = ({ id, text, options, handleChange, answers }) => (
   );
 
 const Option = ({ value, questionId, handleChange, checked }) => (
-    <div style={{ display: "inline-block" }}>
-        <input
+    <div className="option-container">
+        <input 
             type="radio"
             value={value}
             checked={checked}
